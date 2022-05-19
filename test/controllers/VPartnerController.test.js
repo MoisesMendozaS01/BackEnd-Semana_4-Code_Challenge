@@ -9,4 +9,8 @@ describe('Unit test for VPartners Controller',()=>{
         const emails = VPartnerController.getEmailPartnersCert('true');
         expect(emails).toContain('Todd@visualpartnership.xyz')
     })
+    test('Part 3: Prueba de unidad para getNameByCredits',()=>{
+        const name = VPartnerController.getNameByCredits(500);
+        expect(name).toContain('Warren')
+    })
 })
