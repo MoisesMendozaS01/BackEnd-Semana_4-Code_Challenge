@@ -13,4 +13,8 @@ describe('Unit Test for visual partners Services',()=>{
         const EmailPartners = VPartnerService.getEmailPartnersCert(vpartners);
         expect(EmailPartners).toContain("Todd@visualpartnership.xyz")
     })
+    test('Part 3: Prueba de unidad name de alumnos con credit mayor a 500',()=>{
+        const namePartners = VPartnerService.getNamePartnersCredits(vpartners);
+        expect(namePartners).toContain("Warren")
+    })
 })
