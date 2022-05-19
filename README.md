@@ -32,3 +32,12 @@ graph TD;
 
 3. La clase `VPartnerController` se llaman las funcionalidades de `VPartnerService` para implementarla en el server.
 <img src="./pictures/code4.png">
+
+## Parte 3: API como consultarla
+
+| EndPoint | Response |
+|---|---|
+| `/v1/students` | `[{"id":"6264d5d89f1df827eb84bb23","name":"Warren","email":"Todd@visualpartnership.xyz","credits":508,"enrollments":["Visual Thinking Intermedio","Visual Thinking Avanzado"],"previousCourses":1,"haveCertification":true}]` |
+| `/v1/students/emails` | `{"haveCertification":true,"emails":["Todd@visualpartnership.xyz","Sexton@visualpartnership.xyz","Sharlene@visualpartnership.xyz"]}` |
+| `/v1/students/credits` | `{"credits":"500+","names":["Warren","Lucinda","Phillips","Taylor","Mindy","Kara","Cora","Roxanne","Bennett","Bessie","Obrien","Lynda","Carey","Gilda","Elba","Wall","Cecile","Reyna","Richards","Lindsey","Margret","Laverne","Ayers","Tillman","Mosley","Chase","Ware"]}` |
+
