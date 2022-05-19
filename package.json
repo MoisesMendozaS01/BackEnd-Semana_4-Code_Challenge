@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/MoisesMendozaS01/BackEnd-Semana_4-Code_Challenge#readme",
   "devDependencies": {
+    "eslint": "^8.15.0",
     "jest": "^28.1.0"
   },
   "dependencies": {
