@@ -10,11 +10,11 @@ describe('Unit Test for visual partners Services',()=>{
         expect(AllPartners).not.toBeUndefined();
     })
     test('Part 2: Prueba de unidad email de alumnos con certificación',()=>{
-        const EmailPartners = VPartnerService.getEmailPartnersCert(vpartners);
+        const EmailPartners = VPartnerService.getEmailPartnersCert(vpartners,'true');
         expect(EmailPartners).toContain("Todd@visualpartnership.xyz")
     })
     test('Part 3: Prueba de unidad name de alumnos con credit mayor a 500',()=>{
-        const namePartners = VPartnerService.getNamePartnersCredits(vpartners);
+        const namePartners = VPartnerService.getNamePartnersCredits(vpartners,500);
         expect(namePartners).toContain("Warren")
     })
 })
